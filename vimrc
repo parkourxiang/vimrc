@@ -12,8 +12,8 @@ endfunc
 "colorscheme murphy
 "colorscheme desert 
 "colorscheme desert 
-"colorscheme elflord
-colorscheme ron
+colorscheme elflord
+"colorscheme ron
 
 
 
@@ -176,7 +176,7 @@ set nobackup
 set autowrite
 set ruler                   " 打开状态栏标尺
 set cursorline              " 突出显示当前行
-set cursorcolumn
+"set cursorcolumn
 set magic                   " 设置魔术
 set guioptions-=T           " 隐藏工具栏
 set guioptions-=m           " 隐藏菜单栏
