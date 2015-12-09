@@ -67,6 +67,8 @@ autocmd BufNewFile *.cpp,*.[ch],*.sh,*.java exec ":call SetTitle()"
 ""定义函数SetTitle，自动插入文件头 
 func SetTitle() 
 	"如果文件类型为.sh文件 
+	
+	
 	if &filetype == 'sh' 
 		call setline(1,"\#########################################################################") 
 		call append(line("."), "\# File Name: ".expand("%")) 
@@ -85,6 +87,8 @@ func SetTitle()
 		call append(line(".")+4, " ************************************************************************/") 
 		call append(line(".")+5, "")
 	endif
+
+
 	if &filetype == 'cpp'
 		call append(line(".")+6, "#include<iostream>")
 		call append(line(".")+7, "using namespace std;")
@@ -92,8 +96,8 @@ func SetTitle()
 	endif
 	if &filetype == 'c'
 		call append(line(".")+6, "#include<stdio.h>")
-		call append(line(".")+6, "#include<stdlib.h>")
-		call append(line(".")+7, "")
+		call append(line(".")+7, "#include<stdlib.h>")
+		call append(line(".")+8, "")
 	endif
 	"	if &filetype == 'java'
 	"		call append(line(".")+6,"public class ".expand("%"))
